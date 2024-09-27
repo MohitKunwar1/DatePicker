@@ -29,7 +29,20 @@ const DatePreview = () => {
         selectRange={true}
         className={styles.highlight}
       />
-      
+      <ul>
+        <li>
+          StartDate: 
+          {
+            startDate && startDate.toLocaleDateString('en-GB')
+          }
+        </li>
+        <li>
+          EndDate: 
+          {
+            endDate && endDate.toLocaleDateString('en-GB')
+          }
+        </li>
+      </ul>
     </div>
   );
 };
